@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+    <!-- <base href="/"> -->
+
+    <title>OptimizedHTML 4</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Template Basic Images Start -->
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="icon" href="img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+    <!-- Template Basic Images End -->
+
+    <!-- Custom Browsers Color Start -->
+    <meta name="theme-color" content="#000">
+    <!-- Custom Browsers Color End -->
+
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap&subset=cyrillic"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+<header>
+    <div class="container">
+        <div class="first-row-header">
+            <div class="col-md-2">
+                <div class="logo-container__header">
+                    <img src="img/Logo.svg" alt="" class="i-re">
+                </div>
+
+            </div>
+            <div class="col-md-2">
+                <ul class="product-submenu__header">
+                    <li>КАТАЛОГ <img src="img/carret-icon.svg" alt="" class="carret-submenu"></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <form action="" class="Search">
+                    <input class="Search-box" type="search" id="Search-box" autocomplete="off" placeholder="Поиск...">
+                    <label class="Search-label" for="Search-box"><img src="img/search-icon.svg" alt=""></label>
+                </form>
+            </div>
+            <div class="col-md-1">
+                <a href="#" class="user-login">
+                    <img src="img/user-icon.svg" alt="">
+                </a>
+            </div>
+            <div class="col">
+                <a href="" class="cart-header">
+						<span class="cart-count-items-absolute">
+							12
+						</span>
+                    <img src="img/cart-icon.svg" alt="" class="cart-icon">
+                    <div class="cart-descr">
+                        <p class="cart-name">
+                            КОРЗИНА
+                        </p>
+                        <p class="cart-info">
+                            <span class="cart-count-items">12</span> товар на <span class="cart-price">1 590 ₽</span>
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="catalog-main-container">
+        <div class="container" id="parent-for-sidebar">
+            <div class="col-md-3 drop-menu-main-container" >
+                <div class="toggle-panel">
+                    <p class="product-toggler active-toggler-sidebar">ПРОДУКТЫ</p>
+                    <p class="product-toggler">ГОТОВАЯ ЕДА</p>
+                </div>
+                <div class="side-bar-container">
+                    <div id="accordion">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Овощи, фрукты
+                                    </button>
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <i class="fa" aria-hidden="true"></i>
+                                        Молочные продукты
+                                    </button>
+                                </h5>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        <i class="fa" aria-hidden="true"></i>
+                                        Мясо, птица
+                                    </button>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#parent-for-sidebar">
+                    <div class="card-body">
+                        <div class="catalog-dropdown-ul-container">
+                            <h4 class="catalog-dropdown-ul-title">Хлеб</h4>
+                            <ul class="catalog-dropdown-ul">
+                                <li><a href="">Батон</a></li>
+                                <li><a href="">Багет</a></li>
+                                <li><a href="">Белый хлеб</a></li>
+                                <li><a href="">Ржаной хлеб</a></li>
+                                <li><a href="">Пшеничный хлеб</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#parent-for-sidebar">
+                    <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#parent-for-sidebar">
+                    <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="second-row-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="flex-container">
+                        <img src="img/lenta-logo.svg" alt="" class="i-re">
+                        <div class="delivery-items_header">
+                            <img src="img/clock-icon.svg" alt="" class="i-re">
+                            <p>Ближайшая доставка </p>
+                            <p class="delivery-time_header">В течении 30 минут</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 flex-container-second-row">
+                    <div class="map-info-container_header">
+                        <div class="map-info-text__header">
+                            <img src="img/map-indicator-icon.svg" alt="" class="i-re">
+                            <p>ул. Победы, 109А</p>
+                        </div>
+                        <img src="img/pen-icon.svg" alt="" class="pen_header">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+<section class="section-two-columns">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="delivery-img-conainer delivery-img-conainer_bg-1">
+                    <h2 class="delivery_img-block_title">Доставка продуктов <br>
+                        питания на дом</h2>
+                    <p class="delivery_img-block_descr">
+                        Доставим свещие продукты в течении 30 мин.
+                    </p>
+
+                    <a href="#" class="main-btn-link">
+                        Каталог
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="delivery-img-conainer delivery-img-conainer_bg-2">
+                    <h2 class="delivery_img-block_title">Доставка готовых блюд <br>
+                        из ресторана</h2>
+                    <p class="delivery_img-block_descr">
+                        Доставим свещие продукты в течении 30 мин.
+                    </p>
+
+                    <a href="#" class="main-btn-link">
+                        Каталог
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-two-columns">
+    <div class="container">
+        <h2 class="h2-title centered">Доставляем продукты из магазинов</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="stores-logo">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="img/logo_stores/metro-full-1f6f5b8d7c189fe8ab14099938a9ac747cf07b925b7cb4d3faf389a6239a03fd%201.png"
+                                 alt="" class="i-re">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="img/logo_stores/lenta-full-add7c310878fd7a1741e4ae3eacac173062d4ff5211227ae615ddfc6ccdb85c5%201.png"
+                                 alt="" class="i-re">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="img/logo_stores/azbukavkusa-full-12272f1c25998baafdd9ba1152f26514913ba8019627b783b12f9dd9a9755722%201.png"
+                                 alt="" class="i-re">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="img/logo_stores/vkusvill-full-27664b4a62ade74db7ebed1b3ad23485a13a63f9a810a0505962920a8daecc5b%201.png"
+                                 alt="" class="i-re">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="img/logo_stores/selgros-full-bc8445384b308c3283a111d0f888c539b999358c51d0d53c10d59dbe0ae32005%201.png"
+                                 alt="" class="i-re">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="img/logo_stores/Group%20129.png" alt="" class="i-re">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="img/logo_stores/pyaterochka_%201.png" alt="" class="i-re">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="img/logo_stores/image%207.png" alt="" class="i-re">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="img/logo_stores/Perekryostok-logo-2014%201.png" alt="" class="i-re">
+                        </div>
+                    </div>
+                    <a href="#" class="show-more-store">Показать все</a>
+                </div>
+            </div>
+            <div class="col-md-6 ">
+                <div class="big-img_img-1"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-two-columns">
+    <div class="container">
+        <h2 class="h2-title centered">Доставляем блюда из ресторанов</h2>
+        <div class="row">
+            <div class="col-md-6 ">
+                <div class="big-img_img-2"></div>
+            </div>
+            <div class="col-md-6">
+                <div class="stores-logo">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="img/another-logo_stores/burger-king-4%202.png" alt="" class="i-re">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="img/another-logo_stores/subway-13%201.png" alt="" class="i-re">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="img/another-logo_stores/Group%20133.png" alt="" class="i-re">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="img/another-logo_stores/mcdonalds-china%201.png" alt="" class="i-re">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="img/another-logo_stores/kfc-2%202.png" alt="" class="i-re">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="img/another-logo_stores/Mask%20Group.png" alt="" class="i-re">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="img/another-logo_stores/pizza-hut%201.png" alt="" class="i-re">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="img/another-logo_stores/dunkin-donuts-2%201.png" alt="" class="i-re">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="img/another-logo_stores/starbucks%201.png" alt="" class="i-re">
+                        </div>
+                    </div>
+                    <a href="#" class="show-more-store">Показать все</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="action-section">
+    <div class="container">
+        <h2 class="h2-title">Акции</h2>
+        <div class="action-container">
+            <h3 class="action-title">
+                Зарегестрируйся до 1 февраля и получи -20% на первый заказ
+            </h3>
+            <a href="#" class="main-btn-link centered">Регистрация</a>
+        </div>
+    </div>
+</section>
+
+<section class="rev-section">
+    <div class="container">
+        <h2 class="h2-title">Отзывы</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="rev-container">
+                    <div class="first-row-rev">
+                        <div class="name-rev-container">
+                            <img src="img/avatar.png" height="60" width="60" alt="" class="rev-avatar">
+                            <p class="rev-name">Имя Фамилия</p>
+                        </div>
+                        <div class="rev-rating">
+                            <svg width="140" height="20" viewBox="0 0 140 20" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0)">
+                                    <path d="M10.9658 1.03708L13.2215 5.6078C13.3784 5.92569 13.6817 6.14597 14.0325 6.19687L19.0768 6.92987C19.9604 7.05836 20.3129 8.14388 19.6737 8.76675L16.0238 12.3245C15.7701 12.5719 15.6541 12.9286 15.7142 13.2778L16.5757 18.3016C16.7267 19.1814 15.8031 19.8523 15.0129 19.4372L10.5015 17.0655C10.1877 16.9007 9.81267 16.9007 9.49895 17.0655L4.98747 19.4372C4.19732 19.8527 3.27367 19.1814 3.42469 18.3016L4.28618 13.2778C4.34626 12.9286 4.23028 12.5719 3.97663 12.3245L0.326648 8.76675C-0.312484 8.14347 0.0400399 7.05794 0.923644 6.92987L5.96787 6.19687C6.31872 6.14597 6.62202 5.92569 6.77888 5.6078L9.03462 1.03708C9.42928 0.236499 10.5707 0.236499 10.9658 1.03708Z"
+                                          fill="#FDCA06"/>
+                                </g>
+                                <g clip-path="url(#clip1)">
+                                    <path d="M40.9658 1.03708L43.2215 5.6078C43.3784 5.92569 43.6817 6.14597 44.0325 6.19687L49.0768 6.92987C49.9604 7.05836 50.3129 8.14388 49.6737 8.76675L46.0238 12.3245C45.7701 12.5719 45.6541 12.9286 45.7142 13.2778L46.5757 18.3016C46.7267 19.1814 45.8031 19.8523 45.0129 19.4372L40.5015 17.0655C40.1877 16.9007 39.8127 16.9007 39.4989 17.0655L34.9875 19.4372C34.1973 19.8527 33.2737 19.1814 33.4247 18.3016L34.2862 13.2778C34.3463 12.9286 34.2303 12.5719 33.9766 12.3245L30.3266 8.76675C29.6875 8.14347 30.04 7.05794 30.9236 6.92987L35.9679 6.19687C36.3187 6.14597 36.622 5.92569 36.7789 5.6078L39.0346 1.03708C39.4293 0.236499 40.5707 0.236499 40.9658 1.03708Z"
+                                          fill="#FDCA06"/>
+                                </g>
+                                <g clip-path="url(#clip2)">
+                                    <path d="M70.9658 1.03708L73.2215 5.6078C73.3784 5.92569 73.6817 6.14597 74.0325 6.19687L79.0768 6.92987C79.9604 7.05836 80.3129 8.14388 79.6737 8.76675L76.0238 12.3245C75.7701 12.5719 75.6541 12.9286 75.7142 13.2778L76.5757 18.3016C76.7267 19.1814 75.8031 19.8523 75.0129 19.4372L70.5015 17.0655C70.1877 16.9007 69.8127 16.9007 69.4989 17.0655L64.9875 19.4372C64.1973 19.8527 63.2737 19.1814 63.4247 18.3016L64.2862 13.2778C64.3463 12.9286 64.2303 12.5719 63.9766 12.3245L60.3266 8.76675C59.6875 8.14347 60.04 7.05794 60.9236 6.92987L65.9679 6.19687C66.3187 6.14597 66.622 5.92569 66.7789 5.6078L69.0346 1.03708C69.4293 0.236499 70.5707 0.236499 70.9658 1.03708Z"
+                                          fill="#FDCA06"/>
+                                </g>
+                                <g clip-path="url(#clip3)">
+                                    <path d="M100.966 1.03708L103.222 5.6078C103.378 5.92569 103.682 6.14597 104.033 6.19687L109.077 6.92987C109.96 7.05836 110.313 8.14388 109.674 8.76675L106.024 12.3245C105.77 12.5719 105.654 12.9286 105.714 13.2778L106.576 18.3016C106.727 19.1814 105.803 19.8523 105.013 19.4372L100.501 17.0655C100.188 16.9007 99.8127 16.9007 99.4989 17.0655L94.9875 19.4372C94.1973 19.8527 93.2737 19.1814 93.4247 18.3016L94.2862 13.2778C94.3463 12.9286 94.2303 12.5719 93.9766 12.3245L90.3266 8.76675C89.6875 8.14347 90.04 7.05794 90.9236 6.92987L95.9679 6.19687C96.3187 6.14597 96.622 5.92569 96.7789 5.6078L99.0346 1.03708C99.4293 0.236499 100.571 0.236499 100.966 1.03708Z"
+                                          fill="#FDCA06"/>
+                                </g>
+                                <g clip-path="url(#clip4)">
+                                    <path d="M130.966 1.03708L133.222 5.6078C133.378 5.92569 133.682 6.14597 134.033 6.19687L139.077 6.92987C139.96 7.05836 140.313 8.14388 139.674 8.76675L136.024 12.3245C135.77 12.5719 135.654 12.9286 135.714 13.2778L136.576 18.3016C136.727 19.1814 135.803 19.8523 135.013 19.4372L130.501 17.0655C130.188 16.9007 129.813 16.9007 129.499 17.0655L124.987 19.4372C124.197 19.8527 123.274 19.1814 123.425 18.3016L124.286 13.2778C124.346 12.9286 124.23 12.5719 123.977 12.3245L120.327 8.76675C119.688 8.14347 120.04 7.05794 120.924 6.92987L125.968 6.19687C126.319 6.14597 126.622 5.92569 126.779 5.6078L129.035 1.03708C129.429 0.236499 130.571 0.236499 130.966 1.03708Z"
+                                          fill="#FDCA06"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0">
+                                        <rect width="20" height="20" fill="white"/>
+                                    </clipPath>
+                                    <clipPath id="clip1">
+                                        <rect x="30" width="20" height="20" fill="white"/>
+                                    </clipPath>
+                                    <clipPath id="clip2">
+                                        <rect x="60" width="20" height="20" fill="white"/>
+                                    </clipPath>
+                                    <clipPath id="clip3">
+                                        <rect x="90" width="20" height="20" fill="white"/>
+                                    </clipPath>
+                                    <clipPath id="clip4">
+                                        <rect x="120" width="20" height="20" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                        </div>
+                    </div>
+                    <div class="second-row-rev">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien habitant sit at bibendum enim
+                            euismod scelerisque nunc vestibulum. Non justo vitae maecenas facilisis in. Neque faucibus
+                            mauris ultrices eleifend. Nibh sed felis sed pellentesque ut. In magna adipiscing elementum
+                            facilisis amet libero fames ultrices. Sem diam elit sed placerat bibendum tincidunt. Auctor
+                            auctor massa ultricies accumsan duis. Iaculis magna est nec nulla mattis molestie </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="rev-container">
+                    <div class="first-row-rev">
+                        <div class="name-rev-container">
+                            <img src="img/avatar.png" height="60" width="60" alt="" class="rev-avatar">
+                            <p class="rev-name">Имя Фамилия</p>
+                        </div>
+                        <div class="rev-rating">
+                            <svg width="140" height="20" viewBox="0 0 140 20" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0)">
+                                    <path d="M10.9658 1.03708L13.2215 5.6078C13.3784 5.92569 13.6817 6.14597 14.0325 6.19687L19.0768 6.92987C19.9604 7.05836 20.3129 8.14388 19.6737 8.76675L16.0238 12.3245C15.7701 12.5719 15.6541 12.9286 15.7142 13.2778L16.5757 18.3016C16.7267 19.1814 15.8031 19.8523 15.0129 19.4372L10.5015 17.0655C10.1877 16.9007 9.81267 16.9007 9.49895 17.0655L4.98747 19.4372C4.19732 19.8527 3.27367 19.1814 3.42469 18.3016L4.28618 13.2778C4.34626 12.9286 4.23028 12.5719 3.97663 12.3245L0.326648 8.76675C-0.312484 8.14347 0.0400399 7.05794 0.923644 6.92987L5.96787 6.19687C6.31872 6.14597 6.62202 5.92569 6.77888 5.6078L9.03462 1.03708C9.42928 0.236499 10.5707 0.236499 10.9658 1.03708Z"
+                                          fill="#FDCA06"/>
+                                </g>
+                                <g clip-path="url(#clip1)">
+                                    <path d="M40.9658 1.03708L43.2215 5.6078C43.3784 5.92569 43.6817 6.14597 44.0325 6.19687L49.0768 6.92987C49.9604 7.05836 50.3129 8.14388 49.6737 8.76675L46.0238 12.3245C45.7701 12.5719 45.6541 12.9286 45.7142 13.2778L46.5757 18.3016C46.7267 19.1814 45.8031 19.8523 45.0129 19.4372L40.5015 17.0655C40.1877 16.9007 39.8127 16.9007 39.4989 17.0655L34.9875 19.4372C34.1973 19.8527 33.2737 19.1814 33.4247 18.3016L34.2862 13.2778C34.3463 12.9286 34.2303 12.5719 33.9766 12.3245L30.3266 8.76675C29.6875 8.14347 30.04 7.05794 30.9236 6.92987L35.9679 6.19687C36.3187 6.14597 36.622 5.92569 36.7789 5.6078L39.0346 1.03708C39.4293 0.236499 40.5707 0.236499 40.9658 1.03708Z"
+                                          fill="#FDCA06"/>
+                                </g>
+                                <g clip-path="url(#clip2)">
+                                    <path d="M70.9658 1.03708L73.2215 5.6078C73.3784 5.92569 73.6817 6.14597 74.0325 6.19687L79.0768 6.92987C79.9604 7.05836 80.3129 8.14388 79.6737 8.76675L76.0238 12.3245C75.7701 12.5719 75.6541 12.9286 75.7142 13.2778L76.5757 18.3016C76.7267 19.1814 75.8031 19.8523 75.0129 19.4372L70.5015 17.0655C70.1877 16.9007 69.8127 16.9007 69.4989 17.0655L64.9875 19.4372C64.1973 19.8527 63.2737 19.1814 63.4247 18.3016L64.2862 13.2778C64.3463 12.9286 64.2303 12.5719 63.9766 12.3245L60.3266 8.76675C59.6875 8.14347 60.04 7.05794 60.9236 6.92987L65.9679 6.19687C66.3187 6.14597 66.622 5.92569 66.7789 5.6078L69.0346 1.03708C69.4293 0.236499 70.5707 0.236499 70.9658 1.03708Z"
+                                          fill="#FDCA06"/>
+                                </g>
+                                <g clip-path="url(#clip3)">
+                                    <path d="M100.966 1.03708L103.222 5.6078C103.378 5.92569 103.682 6.14597 104.033 6.19687L109.077 6.92987C109.96 7.05836 110.313 8.14388 109.674 8.76675L106.024 12.3245C105.77 12.5719 105.654 12.9286 105.714 13.2778L106.576 18.3016C106.727 19.1814 105.803 19.8523 105.013 19.4372L100.501 17.0655C100.188 16.9007 99.8127 16.9007 99.4989 17.0655L94.9875 19.4372C94.1973 19.8527 93.2737 19.1814 93.4247 18.3016L94.2862 13.2778C94.3463 12.9286 94.2303 12.5719 93.9766 12.3245L90.3266 8.76675C89.6875 8.14347 90.04 7.05794 90.9236 6.92987L95.9679 6.19687C96.3187 6.14597 96.622 5.92569 96.7789 5.6078L99.0346 1.03708C99.4293 0.236499 100.571 0.236499 100.966 1.03708Z"
+                                          fill="#FDCA06"/>
+                                </g>
+                                <g clip-path="url(#clip4)">
+                                    <path d="M130.966 1.03708L133.222 5.6078C133.378 5.92569 133.682 6.14597 134.033 6.19687L139.077 6.92987C139.96 7.05836 140.313 8.14388 139.674 8.76675L136.024 12.3245C135.77 12.5719 135.654 12.9286 135.714 13.2778L136.576 18.3016C136.727 19.1814 135.803 19.8523 135.013 19.4372L130.501 17.0655C130.188 16.9007 129.813 16.9007 129.499 17.0655L124.987 19.4372C124.197 19.8527 123.274 19.1814 123.425 18.3016L124.286 13.2778C124.346 12.9286 124.23 12.5719 123.977 12.3245L120.327 8.76675C119.688 8.14347 120.04 7.05794 120.924 6.92987L125.968 6.19687C126.319 6.14597 126.622 5.92569 126.779 5.6078L129.035 1.03708C129.429 0.236499 130.571 0.236499 130.966 1.03708Z"
+                                          fill="#FDCA06"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0">
+                                        <rect width="20" height="20" fill="white"/>
+                                    </clipPath>
+                                    <clipPath id="clip1">
+                                        <rect x="30" width="20" height="20" fill="white"/>
+                                    </clipPath>
+                                    <clipPath id="clip2">
+                                        <rect x="60" width="20" height="20" fill="white"/>
+                                    </clipPath>
+                                    <clipPath id="clip3">
+                                        <rect x="90" width="20" height="20" fill="white"/>
+                                    </clipPath>
+                                    <clipPath id="clip4">
+                                        <rect x="120" width="20" height="20" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                        </div>
+                    </div>
+                    <div class="second-row-rev">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien habitant sit at bibendum enim
+                            euismod scelerisque nunc vestibulum. Non justo vitae maecenas facilisis in. Neque faucibus
+                            mauris ultrices eleifend. Nibh sed felis sed pellentesque ut. In magna adipiscing elementum
+                            facilisis amet libero fames ultrices. Sem diam elit sed placerat bibendum tincidunt. Auctor
+                            auctor massa ultricies accumsan duis. Iaculis magna est nec nulla mattis molestie </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-blog">
+    <div class="container">
+        <h2 class="h2-title">Статьи и рецепты</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="blog-post-container">
+                    <img src="img/blog-img.jpg" alt="" class="blog-post-img">
+
+                    <div class="blog-post-descr-container">
+                        <p class="blog-post-descr-text">
+                            8 рецептов чизкейков, которые нисколько не уступают ресторанным
+                        </p>
+                        <div class="link-and-date-container">
+                            <a href="#" class="post-link">Подробнее</a>
+                            <p class="post-date">15 декабря 2019</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="blog-post-container">
+                    <img src="img/blog-img.jpg" alt="" class="blog-post-img">
+
+                    <div class="blog-post-descr-container">
+                        <p class="blog-post-descr-text">
+                            8 рецептов чизкейков, которые нисколько не уступают ресторанным
+                        </p>
+                        <div class="link-and-date-container">
+                            <a href="#" class="post-link">Подробнее</a>
+                            <p class="post-date">15 декабря 2019</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="blog-post-container">
+                    <img src="img/blog-img.jpg" alt="" class="blog-post-img">
+
+                    <div class="blog-post-descr-container">
+                        <p class="blog-post-descr-text">
+                            8 рецептов чизкейков, которые нисколько не уступают ресторанным
+                        </p>
+                        <div class="link-and-date-container">
+                            <a href="#" class="post-link">Подробнее</a>
+                            <p class="post-date">15 декабря 2019</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="how-it-works_section">
+    <div class="container">
+        <div class="row pos-r">
+            <img src="img/line-how-it-works.svg" alt="" class="line-how-it-works">
+            <div class="col-md-4">
+                <img src="img/how-it-works-1.svg" alt="" class="i-re img-centered">
+                <p class="how-it-works_text">
+                    Заполните корзину и сделайте <br>
+                    заказ, не забывайте про <br>
+                    промокоды и акции!
+                </p>
+            </div>
+            <div class="col-md-4">
+                <img src="img/how-it-works-2.svg" alt="" class="i-re img-centered">
+                <p class="how-it-works_text">
+                    Наш курьер доставит заказ в течении <br>
+                    60 минут или он будет для <br>
+                    вас бесплатным!
+                </p>
+            </div>
+            <div class="col-md-4">
+                <img src="img/how-it-works-3.svg" alt="" class="i-re img-centered">
+                <p class="how-it-works_text">
+                    Получите ваш заказ и наслаждайтесь <br>
+                    едой, либо ее приготовлением. <br>
+                    И не забывайте про десерт!
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="map-section">
+
+    <div class="container">
+        <div class="no-padding">
+            <div class="row map-container">
+                <div class="col-md-5">
+                    <div class="map-info-container">
+                        <div class="map-info-items">
+                            <p class="map-info-title">
+                                Доставка:
+                            </p>
+                            <p class="map-info-text">
+                                Круглосуточно, 7 дней в неделю!
+                            </p>
+                            <div class="map-info-text-with-icon">
+                                <div class="col-md-9">
+                                    <p class="map-info-text">
+                                        Выбирайте из большого количества
+                                        магазинов и заведений
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img src="img/arrow-right.svg" alt="" class="img-info-img">
+                                </div>
+                            </div>
+                            <p class="map-info-title">
+                                Оплата:
+                            </p>
+                            <p class="map-info-text">
+                                Оплата осуществляется либо онлайн на сайте,
+                                либо наличкой курьеру.
+                            </p>
+                            <div class="payment-methods-container">
+                                <img src="img/payment-methods/Visa.png" alt="">
+                                <img src="img/payment-methods/paypal.png" alt="">
+                                <img src="img/payment-methods/mastercard.png" alt="">
+                                <img src="img/payment-methods/maestro.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <img src="img/payment-methods/map-img.jpg" alt="" class="map-img">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="img/Logo.svg" alt="" class="logo-footer img-centered">
+                <div class="footer-social-container">
+                    <a href="#"><img src="img/social-contianer/vk.svg" alt=""></a>
+                    <a href="#"><img src="img/social-contianer/facebook.svg" alt=""></a>
+                    <a href="#"><img src="img/social-contianer/twitter.svg" alt=""></a>
+                </div>
+                <div class="phone-footer footer-link">
+                    <a href="tel:8 (999) 123 45 67">8 (999) 123 45 67</a>
+                    <a href="mailto:example@mail.com">example@mail.com</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <ul class="footer-ul">
+                    <li><a href="#">Как это работает?</a></li>
+                    <li><a href="#">Доставка и оплата</a></li>
+                    <li><a href="#">Гарантии</a></li>
+                    <li><a href="#">В чем экономия</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <ul class="footer-ul">
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Выбрать магазин</a></li>
+                    <li><a href="#">Каталог товаров</a></li>
+                    <li><a href="#">Гарантии</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <p class="mobile-app">
+                    Мобильное приложение
+                </p>
+                <div class="mobiles-app">
+                    <a href="#"><img src="img/app-store.svg" alt=""></a>
+                    <a href="#"><img src="img/googpe-play.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/scripts.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
