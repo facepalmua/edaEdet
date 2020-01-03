@@ -27,11 +27,7 @@
           rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet">
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/main.min.css">
 
 </head>
@@ -40,29 +36,29 @@
 <header>
     <div class="container">
         <div class="first-row-header">
-            <div class="col-md-2">
+            <div class="col-md-2 col-sm-6 col-6">
                 <div class="logo-container__header">
                     <img src="img/Logo.svg" alt="" class="i-re">
                 </div>
 
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 col-sm-6 col-6">
                 <ul class="product-submenu__header">
                     <li>КАТАЛОГ <img src="img/carret-icon.svg" alt="" class="carret-submenu"></li>
                 </ul>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 hide-992">
                 <form action="" class="Search">
                     <input class="Search-box" type="search" id="Search-box" autocomplete="off" placeholder="Поиск...">
                     <label class="Search-label" for="Search-box"><img src="img/search-icon.svg" alt=""></label>
                 </form>
             </div>
-            <div class="col-md-1">
+            <div class="col-md-1 col-4">
                 <a href="#" class="user-login">
                     <img src="img/user-icon.svg" alt="">
                 </a>
             </div>
-            <div class="col">
+            <div class="col col-md-3 col-8">
                 <a href="" class="cart-header">
 						<span class="cart-count-items-absolute">
 							12
@@ -80,10 +76,134 @@
             </div>
         </div>
     </div>
+    <div class="catalog-main-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 drop-menu-main-container">
+                    <div class="toggle-panel nav nav-pills">
+                        <p class="product-toggler product-toggler_1 active-toggler-sidebar ">ПРОДУКТЫ</p>
+                        <p class="product-toggler product_toggler_2">ГОТОВАЯ ЕДА</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row  product-toggler-menu_1">
+                <div class="col-md-3 drop-menu-main-container tab-pane fade active in">
+                    <div class="tab-content">
+                        <div id="catalog-toggle-1" class="side-bar-container tab-pane fade active in">
+                            <ul class="nav nav-pills">
+                                <li class="active"><a role="tab" data-toggle="pill" href="#tab_1">Овощи, фрукты</a></li>
+                                <li><a role="tab" data-toggle="pill" href="#tab_2">Мясо, птица</a></li>
+                                <li><a role="tab" data-toggle="pill" href="#tab_3">Рыба и морепродукты</a></li>
+                                <li><a role="tab" data-toggle="pill" href="#tab_4">Замороженные продукты</a></li>
+                                <li><a role="tab" data-toggle="pill" href="#tab_5">Хлеб и выпечка</a></li>
+                                <li><a role="tab" data-toggle="pill" href="#tab_6">Безалкогольные напитки</a></li>
+                                <li><a role="tab" data-toggle="pill" href="#tab_7">Сладкое</a></li>
+                                <li><a role="tab" data-toggle="pill" href="#tab_8">Чай, кофе</a></li>
+                                <li><a role="tab" data-toggle="pill" href="#tab_9">Консервированные продукты</a></li>
+                                <li><a role="tab" data-toggle="pill" href="#tab_10">Бакалея</a></li>
+                                <li><a role="tab" data-toggle="pill" href="#tab_11">Соусы, приправы</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane fade active in" id="tab_1">
+                            <div class="catalog-dropdown-ul-container">
+                                <h4 class="catalog-dropdown-ul-title">Хлеб</h4>
+                                <ul class="catalog-dropdown-ul">
+                                    <li><a href="">Батон</a></li>
+                                    <li><a href="">Багет</a></li>
+                                    <li><a href="">Белый хлеб</a></li>
+                                    <li><a href="">Ржаной хлеб</a></li>
+                                    <li><a href="">Пшеничный хлеб</a></li>
+                                </ul>
+
+                                <h4 class="catalog-dropdown-ul-title">Выпечка</h4>
+                                <ul class="catalog-dropdown-ul">
+                                    <li><a href="">Батон</a></li>
+                                    <li><a href="">Багет</a></li>
+                                    <li><a href="">Белый хлеб</a></li>
+                                    <li><a href="">Ржаной хлеб</a></li>
+                                    <li><a href="">Пшеничный хлеб</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="tab_2">tab content 2</div>
+                        <div role="tabpanel" class="tab-pane fade" id="tab_3">tab content 3</div>
+                        <div role="tabpanel" class="tab-pane fade" id="tab_4">tab content 4</div>
+                        <div role="tabpanel" class="tab-pane fade" id="tab_5">tab content 5</div>
+                        <div role="tabpanel" class="tab-pane fade" id="tab_6">tab content 6</div>
+                        <div role="tabpanel" class="tab-pane fade" id="tab_7">tab content 7</div>
+                        <div role="tabpanel" class="tab-pane fade" id="tab_8">tab content 8</div>
+                        <div role="tabpanel" class="tab-pane fade" id="tab_9">tab content 9</div>
+                        <div role="tabpanel" class="tab-pane fade" id="tab_10">tab content 10</div>
+                        <div role="tabpanel" class="tab-pane fade" id="tab_11">tab content 11</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row product-toggler-menu_2">
+                <div class="col-md-3 drop-menu-main-container tab-pane fade active in">
+                    <div class="tab-content">
+                        <div id="catalog-toggle-2" class="side-bar-container tab-pane fade active in">
+                            <ul class="nav nav-pills">
+                                <li class="active"><a role="tab" data-toggle="pill" href="#tab_11">Совсем другие Овощи, фрукты</a></li>
+                                <li><a role="tab" data-toggle="pill" href="#tab_21">Мясо, птица</a></li>
+                                <li><a role="tab" data-toggle="pill" href="#tab_31">Рыба и морепродукты</a></li>
+                                <li><a role="tab" data-toggle="pill" href="#tab_41">Замороженные продукты</a></li>
+                                <li><a role="tab" data-toggle="pill" href="#tab_51">Хлеб и выпечка</a></li>
+                                <li><a role="tab" data-toggle="pill" href="#tab_61">Безалкогольные напитки</a></li>
+                                <li><a role="tab" data-toggle="pill" href="#tab_71">Сладкое</a></li>
+                                <li><a role="tab" data-toggle="pill" href="#tab_81">Чай, кофе</a></li>
+                                <li><a role="tab" data-toggle="pill" href="#tab_91">Консервированные продукты</a></li>
+                                <li><a role="tab" data-toggle="pill" href="#tab_101">Бакалея</a></li>
+                                <li><a role="tab" data-toggle="pill" href="#tab_111">Соусы, приправы</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane fade active in" id="tab_second">
+                            <div class="catalog-dropdown-ul-container">
+                                <h4 class="catalog-dropdown-ul-title">Совсем другой Хлеб</h4>
+                                <ul class="catalog-dropdown-ul">
+                                    <li><a href="">Батон</a></li>
+                                    <li><a href="">Багет</a></li>
+                                    <li><a href="">Белый хлеб</a></li>
+                                    <li><a href="">Ржаной хлеб</a></li>
+                                    <li><a href="">Пшеничный хлеб</a></li>
+                                </ul>
+
+                                <h4 class="catalog-dropdown-ul-title">Выпечка</h4>
+                                <ul class="catalog-dropdown-ul">
+                                    <li><a href="">Батон</a></li>
+                                    <li><a href="">Багет</a></li>
+                                    <li><a href="">Белый хлеб</a></li>
+                                    <li><a href="">Ржаной хлеб</a></li>
+                                    <li><a href="">Пшеничный хлеб</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="tab_21">tab content 2</div>
+                        <div role="tabpanel" class="tab-pane fade" id="tab_31">tab content 3</div>
+                        <div role="tabpanel" class="tab-pane fade" id="tab_41">tab content 4</div>
+                        <div role="tabpanel" class="tab-pane fade" id="tab_51">tab content 5</div>
+                        <div role="tabpanel" class="tab-pane fade" id="tab_61">tab content 6</div>
+                        <div role="tabpanel" class="tab-pane fade" id="tab_71">tab content 7</div>
+                        <div role="tabpanel" class="tab-pane fade" id="tab_81">tab content 8</div>
+                        <div role="tabpanel" class="tab-pane fade" id="tab_91">tab content 9</div>
+                        <div role="tabpanel" class="tab-pane fade" id="tab_101">tab content 10</div>
+                        <div role="tabpanel" class="tab-pane fade" id="tab_111">tab content 11</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="second-row-header">
         <div class="container">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-8  col-sm-12">
                     <div class="flex-container">
                         <img src="img/lenta-logo.svg" alt="" class="i-re">
                         <div class="delivery-items_header">
@@ -93,7 +213,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 flex-container-second-row">
+                <div class="col-md-4 col-sm-12 flex-container-second-row">
                     <div class="map-info-container_header">
                         <div class="map-info-text__header">
                             <img src="img/map-indicator-icon.svg" alt="" class="i-re">
@@ -127,10 +247,10 @@
                                     </a>
                                 </h4>
                             </div>
-                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel"
+                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
                                  aria-labelledby="headingOne">
                                 <div class="panel-body">
-                                    content2
+                                    content1
                                 </div>
                             </div>
                         </div>

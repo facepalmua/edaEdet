@@ -517,7 +517,8 @@ h1, h2 {
 }
 
 .blog-post-img {
-  height: 280px;
+  height: 240px;
+  object-fit: cover;
   width: 100%;
 }
 
@@ -780,6 +781,13 @@ footer {
   }
 }
 
+.wrapper .tab {
+  display: none;
+}
+.wrapper .active {
+  color: red;
+}
+
 .product-toggler {
   font-family: Montserrat;
   font-style: normal;
@@ -810,8 +818,8 @@ footer {
       bottom: -17px;
       background-color: #fdca06;
       height: 3px;
-      width: 149%;
-      left: -13px;
+      width: 100%;
+      left: 0;
     }
   }
 
@@ -1095,6 +1103,7 @@ footer {
 
 .catalog-dropdown-ul {
   padding: 0;
+  margin-bottom: 30px;
   list-style-type: none;
 
   a {
@@ -1120,6 +1129,99 @@ footer {
 
 .show-submenu {
   display: block;
+}
+
+
+.side-bar-container {
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    a {
+      display: block;
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 19px;
+      /* identical to box height */
+
+      color: #333333;
+      padding-top: 20px;
+      padding-left: 10px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid rgba(0,0,0,.1);
+    }
+  }
+}
+
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  color: $accent;
+}
+
+.tab-content > .tab-pane {
+  display: none;
+}
+.tab-content > .active {
+  display: block;
+}
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity .15s linear;
+  -o-transition: opacity .15s linear;
+  transition: opacity .15s linear;
+}
+.fade.in {
+  opacity: 1;
+}
+
+.map-img {
+  width: 100%;
+  height: auto;
+}
+
+.delivery_img-block_title {
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 34px;
+
+  color: #FFFFFF;
+}
+
+.product-toggler-menu_2 {
+  display: none;
+}
+
+.collapse {
+  display: none;
+}
+.collapse.in {
+  display: block;
+}
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+  -webkit-transition-duration: .35s;
+  -o-transition-duration: .35s;
+  transition-duration: .35s;
+  -webkit-transition-property: height, visibility;
+  -o-transition-property: height, visibility;
+  transition-property: height, visibility;
+}
+
+.panel-default>.panel-heading+.panel-collapse>.panel-body {
+  border-top-color: #ddd0;
+  background: #fff;
+  padding: 10px 15px;
 }
 
 
